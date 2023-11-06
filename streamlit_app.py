@@ -1,26 +1,34 @@
 import streamlit as st
   # pip install streamlit
 
-st.header(":mailbox: Get In Touch With Ritu Raj!")
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Introduction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Web Developer</p>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Your Name. I'm a web developer passionate about creating amazing websites and web applications. I enjoy learning new technologies and building cool projects.</p>
+    </section>
 
-
-contact_form = """
-<form action="https://formsubmit.co/YOUREMAIL@EMAIL.COM" method="POST">
-     <input type="hidden" name="_captcha" value="false">
-     <input type="text" name="name" placeholder="Your name" required>
-     <input type="email" name="email" placeholder="Your email" required>
-     <textarea name="message" placeholder="Your message here"></textarea>
-     <button type="submit">Send</button>
-</form>
-"""
-
-st.markdown(contact_form, unsafe_allow_html=True)
-
-# Use Local CSS File
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-
-local_css("style/style.css")
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: your.email@example.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile">LinkedIn Profile</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Your Name</p>
+    </footer>
+</body>
+</html>
 
