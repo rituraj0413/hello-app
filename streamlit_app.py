@@ -1,7 +1,7 @@
 import streamlit as st
   # pip install streamlit
 
-st.header(":mailbox: Get In Touch With Me!")
+st.header(":mailbox: Get In Touch With Ritu Raj!")
 
 
 contact_form = """
